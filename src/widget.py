@@ -12,3 +12,9 @@ def mask_account_card(number_account: str) -> str:
     else:
         number_account_masked = number_account.replace(new_number_account, "") + get_mask_card_number(int(new_number_account))
     return number_account_masked
+
+
+def get_date(date_str: str) -> str:
+    """ Возвращает строку с датой в формате "ДД.ММ.ГГГГ" """
+    new_date = ':'.join(sorted(date_str[0:10].split('-'), reverse=True))
+    return new_date
