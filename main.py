@@ -1,6 +1,7 @@
 from src.masks import get_mask_account
 from src.masks import get_mask_card_number
-from src.widget import mask_account_card, get_date
+from src.widget import get_date
+from src.widget import mask_account_card
 
 __name__ = "main"
 
